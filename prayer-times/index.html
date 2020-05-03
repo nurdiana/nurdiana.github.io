@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Jadwal Shalat</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main role="main">
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1 class="jumbotron-heading">Jadwal Shalat</h1>
+                <p class="lead">Catatan : Hanya untuk keperluan belajar. Untuk penentuan waktu yang lebih
+                    akurat, silahkan menghubungi ulama yang lebih faham.</p>
+                <p>API : aladhan.com<p>
+                        <p>Method : <select id="select-method"></select></p>
+                        <p>Timezone : <span id="timezone"></span> (latitude : <span id="latitude">Loading ...</span>,
+                            longitude : <span id="longitude">Loading ...</span>)</p>
+                <p id="error-location"></p>
+            </div>
+        </section>
+
+        <div class="album py-5 bg-light">
+            <h5>Jadwal Hari Ini (<span id="today">Loading ...</span>)</h5>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-header">Shubuh</div>
+                            <div class="card-body">
+                                <p class="card-text" id="fajr">Loading ...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-header">Dhuhur</div>
+                            <div class="card-body">
+                                <p class="card-text" id="dhuhr">Loading ...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-header">Ashar</div>
+                            <div class="card-body">
+                                <p class="card-text" id="asr">Loading ...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-header">Maghrib</div>
+                            <div class="card-body">
+                                <p class="card-text" id="maghrib">Loading ...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card mb-4 box-shadow">
+                            <div class="card-header">Isya</div>
+                            <div class="card-body">
+                                <p class="card-text" id="isha">Loading ...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="album bg-light px-4">
+            <h5>Jadwal Bulan Ini (<span id="this-month">Loading ...</span>)</h5>
+            <div class="table-responsive">
+                <table class="table table-striped" id="table">
+                    <thead>
+                        <th>
+                            Hijriah
+                        </th>
+                        <th>
+                            Masehi
+                        </th>
+                        <th>
+                            Shubuh
+                        </th>
+                        <th>
+                            Dhuhur
+                        </th>
+                        <th>
+                            Ashar
+                        </th>
+                        <th>
+                            Maghrib
+                        </th>
+                        <th>
+                            Isya
+                        </th>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </main>
+</body>
+
+</html>

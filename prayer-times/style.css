@@ -1,0 +1,16 @@
+.selector-for-some-widget {
+    box-sizing: content-box;
+}
+
+h5 {
+    text-align: center;
+}
+
+.jumbotron, .text-muted {
+    background: #266A2E;
+    color: #97BC62FF;
+}
+
+body {
+    color: #2C5F2D;
+}
