@@ -32,7 +32,7 @@ xmlHttpMethod.onreadystatechange = function () {
         };
     }
 };
-xmlHttpMethod.open("GET", "http://api.aladhan.com/v1/methods");
+xmlHttpMethod.open("GET", "https://api.aladhan.com/v1/methods");
 xmlHttpMethod.send();
 
 //Get Date
@@ -147,6 +147,6 @@ function getData() {
             }
         }
     };
-    xmlhttp.open("GET", "http://api.aladhan.com/v1/calendar?latitude="+ latitude +"&longitude="+ longitude +"&method="+ selectedMethod +"&month="+mm+"&year="+yyyy);
+    xmlhttp.open("GET", "https://api.aladhan.com/v1/calendar?latitude="+ latitude +"&longitude="+ longitude +"&method="+ selectedMethod +"&month="+mm+"&year="+yyyy);
     xmlhttp.send();
 }
