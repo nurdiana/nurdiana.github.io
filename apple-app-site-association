@@ -1,11 +1,15 @@
 {
   "applinks": {
-      "apps": [],
-      "details": [
+    "apps": [],
+    "details": [
+      {
+        "appID": "766J56ZAJQ.id.co.bni.newagenbni46",
+        "components": [
           {
-              "appID": "766J56ZAJQ.id.co.bni.newagenbni46",
-              "paths": [ "*" ]
+            "/": "*"
           }
-      ]
+        ]
+      }
+    ]
   }
 }
